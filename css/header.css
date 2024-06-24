@@ -23,6 +23,7 @@
     height: 57px;
 }
 
+
 .header-content-in {
     width: 100%;
     justify-content: space-between;
@@ -70,6 +71,22 @@
     transform: translate(-50%, -50%);
     width: 2px;
     height: 4px;
+}
+
+.header-top {
+    height: 100%;
+}
+
+.logo-top {
+    display: none;
+    top: 10px;
+    position: fixed;
+    width: 40px;
+}
+
+.logo-top img {
+    height: 40px;
+    width: 40px;
 }
 
 .header-right {
@@ -290,8 +307,6 @@
     height: 4px;
 }
 
-/* seelct */
-
 .bottom {
     background: rgba(6, 73, 110, 1);
     width: 100%;
@@ -299,6 +314,10 @@
     gap: 0px;
     opacity: 0px;
     margin-top: 100px;
+}
+
+.bottom.active-bottom {
+    height: 100%;
 }
 
 .bottom-in {
@@ -313,9 +332,29 @@
     align-items: center;
 }
 
+.bottom-elements .gamburger {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 20px 10px 0px 0px;
+    color: white;
+    font-size: 20px;
+}
+
 .bottom .show-footer {
     max-width: 60px;
 }
+
+.bottom-elements .select-page.active-select {
+    display: flex;
+}
+
+.bottom-elements .select-page {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .select-container {
     display: inline-block;
@@ -349,6 +388,7 @@
 .select-container label {
     color: rgba(255, 255, 255, 1);
     font-size: 19px;
+    margin-left: 5px;
 }
 
 .select-container label span {
@@ -369,6 +409,7 @@
 
     .middle-btns .btn .drop-down {
         width: 8px;
+        margin-bottom: 15px;
         height: 4px;
     }
 
@@ -392,6 +433,10 @@
         height: 20px;
     }
 
+    .btn .instagram-icon .inst-dot {
+        transform: translate(34%, -157%);
+    }
+
     .middle-text {
         width: 685px;
     }
@@ -402,6 +447,19 @@
 
     .middle-text .text .body {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1632px) {
+    .select-container label {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:1602px) {
+    .select-container label {
+        font-size: 19px;
+        margin-left: 0px;
     }
 }
 
@@ -427,6 +485,7 @@
     .middle-btns .btn .drop-down {
         width: 7px;
         height: 3px;
+        margin-bottom: 7px;
     }
 
     .middle-btns .btn img {
@@ -513,7 +572,7 @@
     }
 
     .middle-btns .btn p {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .middle-btns .btn .drop-down {
@@ -522,8 +581,8 @@
     }
 
     .middle-btns .btn img {
-        width: 24px;
-        height: 24px;
+        width: 15px;
+        height: 15px;
     }
 
     .middle-text .logo {
@@ -536,28 +595,34 @@
     }
 
     .btn .instagram-icon {
-        height: 26px;
+        height: 16px;
     }
 
     .btn .instagram-icon .inst-crcle {
-        width: 10px;
-        height: 10px;
+        width: 7px;
+        height: 7px;
+    }
+
+    .btn .instagram-icon .inst-dot {
+        width: 2px;
+        transform: translate(100%, -267%);
+        height: 2px;
     }
 
     .middle-btns .btn {
-        height: 50px;
-        padding: 12px 10px;
+        height: 40px;
+        padding: 10px 8px;
     }
 
     .btn .instagram-icon .inst-border {
-        width: 24px;
-        height: 24px;
+        width: 15px;
+        height: 15px;
     }
 
     .middle-text {
         display: flex;
         justify-content: center;
-        width: 900px;
+        width: 700px;
     }
 
     .middle-text .text {
@@ -565,7 +630,7 @@
     }
 
     .middle-text .text .title {
-        font-size: 20px;
+        font-size: 15px;
         line-height: 50px;
     }
 
@@ -573,9 +638,58 @@
         margin-top: 20px;
     }
 
+    .middle-btns .btn p {
+        line-height: 17px;
+    }
+
     .middle-text .text .body {
-        font-size: 23px;
+        font-size: 20px;
         line-height: 10px;
+    }
+}
+
+@media only screen and (max-width:1392px) {
+    .select-container label span {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1360px) {
+    .header-content {
+        padding: 0px 30px;
+    }
+
+    .bottom-in {
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width:1302px) {
+
+    .show-footer {
+        position: absolute;
+        padding: 20px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .bottom-elements {
+        position: relative;
+        justify-content: center;
+    }
+
+    .bottom {
+        height: 100%;
+    }
+
+    .bottom-in {
+        height: 100%;
+        display: flex;
+    }
+
+    .bottom-elements .select-page {
+        overflow: hidden;
+        flex-direction: column;
     }
 }
 
@@ -624,7 +738,7 @@
     }
 
     .middle-text {
-        width: 600px;
+        width: 580px;
         display: flex;
         justify-content: center;
     }
@@ -685,6 +799,8 @@
     }
 }
 
+
+
 @media only screen and (max-width:770px) {
     .middle-btns {
         width: 100%;
@@ -704,9 +820,11 @@
     }
 
     .middle-btns .btn .drop-down {
+        right: 10px;
         width: 12px;
-        right: 0px;
         height: 6px;
+        position: absolute;
+        top: 15px;
     }
 
     .middle-btns .btn img {
@@ -728,10 +846,13 @@
         height: 10px;
     }
 
+
     .btn .instagram-icon .inst-dot {
-        width: 5px;
-        height: 5px;
+        width: 3px;
+        height: 3px;
+        transform: translate(95%, -228%);
     }
+
 
     .middle-btns .btn {
         width: 80%;
@@ -742,6 +863,25 @@
     .btn .instagram-icon .inst-border {
         width: 20px;
         height: 20px;
+    }
+
+    .bottom {
+        margin-top: 300px;
+    }
+
+    .bottom-elements .select-page {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .select-page .column-one {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select-page .column-second {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -775,7 +915,7 @@
     }
 
     .middle-btns .btn p {
-        font-size: 17px;
+        font-size: 14px;
     }
 }
 
@@ -786,8 +926,87 @@
     }
 }
 
-/* @media only screen and(max-width:533px){
-    .middle-text .text{
+@media only screen and (max-width:533px) {
+    .middle-text {
         width: 400px;
     }
-} */
+
+    .middle-text .text .title {
+        text-align: center;
+    }
+
+    .middle-text .text .body {
+        text-align: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .middle-btns {
+        margin-top: 30px;
+    }
+
+    .logo-top {
+        display: flex;
+    }
+
+    .header-content {
+        padding: 0px 10px;
+    }
+
+    .header-content-in {
+        align-items: end;
+    }
+
+    .bottom-in {
+        padding: 0px 10px;
+    }
+
+    .show-footer {
+        padding: 20px 10px 0px 0px;
+    }
+
+    .email {
+        width: 90px;
+    }
+
+    .middle-btns .btn .drop-down {
+        width: 10px;
+        height: 4px;
+    }
+
+    .middle-btns .btn {
+        min-width: 90%;
+    }
+}
+
+@media only screen and (max-width:455px) {
+    .bottom-elements .gamburger {
+        display: flex;
+    }
+
+    .bottom {
+        height: 74px;
+    }
+
+    .select-container {
+        margin: 10px 5px;
+    }
+
+    .bottom-elements .select-page {
+        display: none;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .middle-text {
+        width: 360px;
+    }
+
+    .middle-text .text {
+        width: 360px;
+
+    }
+}

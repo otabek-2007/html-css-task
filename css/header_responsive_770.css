@@ -5,13 +5,16 @@
 }
 
 #headerIframe {
-    height: 275px;
+    height: 350px;
 }
 
-#showPage {
-    height: 100vh;
+#headerIframe.active-header {
+    height: 950px;
 }
-
+#showPage{
+    height: 100vb;
+    padding: 10px;
+}
 iframe {
     display: block;
     border: none;
@@ -23,13 +26,19 @@ iframe {
 }
 
 @media only screen and (max-width:1420px) {
-    #header {
-        height: 800px;
+    #headerIframe {
+        height: 430px;
     }
 }
 
 @media only screen and (max-width:770px) {
-    #header {
-        height: 1800px;
+    #headerIframe {
+        height: 850px;
+    }
+}
+
+@media only screen and (max-width:455px) {
+    #headerIframe {
+        height: 550px;
     }
 }
