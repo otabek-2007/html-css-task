@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#headerIframe {
+    height: 275px;
+}
+
+#showPage {
+    height: 100vh;
+}
+
+iframe {
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+#footer {
+    height: 332px;
+}
+
+@media only screen and (max-width:1420px) {
+    #header {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    #header {
+        height: 1800px;
+    }
+}

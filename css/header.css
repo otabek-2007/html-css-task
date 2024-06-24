@@ -1,0 +1,793 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('fonts/MuseoSansCyrl-Regular.woff2') format('woff2'),
+        url('fonts/MuseoSansCyrl-Regular.woff') format('woff');
+}
+
+.header-container {
+    width: 100%;
+    background: rgba(245, 248, 250, 1);
+    height: 100%;
+}
+
+.header-content {
+    max-width: 1920px;
+    padding: 0px 60px;
+    margin: auto;
+    height: 57px;
+}
+
+.header-content-in {
+    width: 100%;
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-left {
+    display: inline-flex;
+    top: 16px;
+}
+
+.header-text p {
+    /* margin-left: 10px; */
+    font-family: 'Museo Sans Cyrl';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+.header-icon {
+    position: relative;
+    width: 24px;
+    top: 2px;
+    height: 24px;
+}
+
+.header-icon img {
+    display: block;
+}
+
+.error-img-out {
+    left: 2px;
+    border: 1.5px;
+    width: 20px;
+    height: 17.33px;
+}
+
+.error-img-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 4px;
+}
+
+.header-right {
+    display: inline-flex;
+    right: 0px;
+}
+
+.phone-number {
+    width: 206px;
+    height: 25px;
+    top: 16px;
+    gap: 6px;
+    opacity: 0px;
+
+}
+
+.phone-number img {
+    width: 20px;
+    height: 20.01px;
+    top: 0px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.phone-number span {
+    font-family: "Museo Sans Cyrl";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+
+}
+
+.email {
+    display: inline-flex;
+    width: 130px;
+    height: 25px;
+    top: 16px;
+    gap: 6px;
+    opacity: 0px;
+
+}
+
+.email span {
+    font-family: "Museo Sans Cyrl";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+.email img {
+    margin-top: 1px;
+    width: 20px;
+    height: 18.33px;
+    top: 0.83px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.middle-container {
+    width: 100%;
+    height: 100%;
+}
+
+.middle-content {
+    max-width: 1920px;
+    padding: 0px 60px;
+    margin: auto;
+    height: 80px;
+}
+
+.middle-content-in {
+    margin-top: 30px;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.middle-text {
+    display: inline-flex;
+    width: 786px;
+    height: 80px;
+    top: 89px;
+    left: 60px;
+    gap: 12px;
+    opacity: 0px;
+}
+
+.middle-text .logo {
+    width: 80px;
+    height: 80px;
+    padding: 0.85px 6.15px 0.99px 9.25px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.logo img {
+    width: 74px;
+    height: 78.16px;
+    top: 0.85px;
+    left: 9.25px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.middle-text .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 694px;
+    height: 70px;
+    gap: 4px;
+    opacity: 0px;
+
+}
+
+.text .title {
+    font-family: "Museo Sans Cyrl";
+    font-size: 20px;
+    color: rgba(131, 136, 144, 1);
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+}
+
+.text .body {
+    font-family: "Museo Sans Cyrl";
+    color: rgba(17, 22, 30, 1);
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+
+}
+
+.middle-btns {
+    display: inline-flex;
+    max-width: 908px;
+    height: 51px;
+    margin-top: 10px;
+    left: 952px;
+    gap: 12px;
+    opacity: 0px;
+}
+
+.middle-btns .btn {
+    display: inline-flex;
+    background: rgba(245, 248, 250, 1);
+    height: 51px;
+    padding: 12px 16px 12px 16px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px;
+    border: 1px solid rgba(221, 226, 234, 1);
+    opacity: 0px;
+}
+
+.btn p {
+    font-family: "Museo Sans Cyrl";
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26.6px;
+    color: rgba(131, 136, 144, 1);
+    text-align: left;
+}
+
+.btn img {
+    width: 24px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.btn .drop-down {
+    width: 10px;
+    margin: auto;
+    height: 5px;
+}
+
+.btn {
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn .instagram-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.btn .instagram-icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn .instagram-icon .inst-border {
+    width: 24px;
+    height: 24px;
+}
+
+.btn .instagram-icon .inst-crcle {
+    width: 12px;
+    height: 12px;
+}
+
+.btn .instagram-icon .inst-dot {
+    width: 4px;
+    transform: translate(100%, -180%);
+    height: 4px;
+}
+
+/* seelct */
+
+.bottom {
+    background: rgba(6, 73, 110, 1);
+    width: 100%;
+    height: 74px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 100px;
+}
+
+.bottom-in {
+    margin: auto;
+    padding: 0px 60px;
+    max-width: 1920px;
+}
+
+.bottom-elements {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bottom .show-footer {
+    max-width: 60px;
+}
+
+.select-container {
+    display: inline-block;
+    position: relative;
+    margin: 20px 5px;
+}
+
+.select-container select {
+    width: 100%;
+    display: flex;
+    margin-top: -10px;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    z-index: 11;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.select-container .selection .line {
+    width: 350px;
+    height: 6px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(110, 205, 240, 1);
+
+}
+
+.select-container label {
+    color: rgba(255, 255, 255, 1);
+    font-size: 19px;
+}
+
+.select-container label span {
+    margin-left: 10px;
+}
+
+.select-container label img {
+    margin-bottom: 4px;
+    height: 5px;
+    width: 10px;
+}
+
+@media only screen and (max-width:1782px) {
+    .middle-btns .btn p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .middle-btns .btn .drop-down {
+        width: 8px;
+        height: 4px;
+    }
+
+    .middle-btns .btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .middle-text .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .btn .instagram-icon .inst-crcle {
+        width: 9px;
+        height: 9px;
+    }
+
+    .btn .instagram-icon .inst-border {
+        width: 20px;
+        height: 20px;
+    }
+
+    .middle-text {
+        width: 685px;
+    }
+
+    .middle-text .text .title {
+        font-size: 17px;
+    }
+
+    .middle-text .text .body {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1590px) {
+    .middle-btns .btn p {
+        font-size: 14px;
+    }
+
+    .show-footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .select-container label span {
+        font-size: 16px;
+    }
+
+    .select-container label img {
+        width: 8px;
+        height: 3px;
+    }
+
+    .middle-btns .btn .drop-down {
+        width: 7px;
+        height: 3px;
+    }
+
+    .middle-btns .btn img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .middle-text .logo {
+        margin-top: 0px;
+    }
+
+    .middle-text .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .btn .instagram-icon {
+        height: 20px;
+    }
+
+    .btn .instagram-icon .inst-crcle {
+        width: 7px;
+        height: 7px;
+    }
+
+    .middle-btns .btn {
+        height: 40px;
+        padding: 10px 14px;
+    }
+
+    .btn .instagram-icon .inst-border {
+        width: 17px;
+        height: 17px;
+    }
+
+    .middle-text {
+        width: 600px;
+    }
+
+    .middle-text .text {
+        height: 50px;
+    }
+
+    .middle-text .text .title {
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    .middle-text .text .body {
+        font-size: 17px;
+        line-height: 10px;
+    }
+
+    .phone-number {
+        width: 180px;
+    }
+
+    .phone-number img {
+        /* margin-top: 10px; */
+        height: 16px;
+        width: 16px;
+    }
+
+    .phone-number span {
+        font-size: 15px;
+    }
+
+    .email img {
+        margin-top: 3px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .email span {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:1420px) {
+    .middle-content-in {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .middle-btns .btn p {
+        font-size: 20px;
+    }
+
+    .middle-btns .btn .drop-down {
+        width: 10px;
+        height: 5px;
+    }
+
+    .middle-btns .btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .middle-text .logo {
+        margin-top: 0px;
+    }
+
+    .middle-text .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .btn .instagram-icon {
+        height: 26px;
+    }
+
+    .btn .instagram-icon .inst-crcle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .middle-btns .btn {
+        height: 50px;
+        padding: 12px 10px;
+    }
+
+    .btn .instagram-icon .inst-border {
+        width: 24px;
+        height: 24px;
+    }
+
+    .middle-text {
+        display: flex;
+        justify-content: center;
+        width: 900px;
+    }
+
+    .middle-text .text {
+        height: 50px;
+    }
+
+    .middle-text .text .title {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .middle-btns {
+        margin-top: 20px;
+    }
+
+    .middle-text .text .body {
+        font-size: 23px;
+        line-height: 10px;
+    }
+}
+
+@media only screen and (max-width:970px) {
+
+    .header-text p {
+        font-size: 14px;
+    }
+
+    .middle-btns .btn p {
+        font-size: 14px;
+    }
+
+    .middle-btns .btn .drop-down {
+        width: 8px;
+        height: 4px;
+    }
+
+    .middle-btns .btn img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .middle-text .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn .instagram-icon {
+        height: 16px;
+    }
+
+    .btn .instagram-icon .inst-crcle {
+        width: 6px;
+        height: 6px;
+    }
+
+    .middle-btns .btn {
+        height: 40px;
+        padding: 10px;
+    }
+
+    .btn .instagram-icon .inst-border {
+        width: 15px;
+        height: 15px;
+    }
+
+    .middle-text {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .middle-text .text {
+        height: 50px;
+    }
+
+    .middle-text .text .title {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .header-icon .error-img-in {
+        width: 4px;
+        transform: translate(-130%, -80%);
+        height: 8px;
+    }
+
+    .header-icon .error-img-out {
+        margin-top: 1px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .middle-text .text .body {
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    .middle-text .logo {
+        padding-left: 30px;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .email img {
+        margin-top: 4px;
+        width: 15px;
+        height: 14px;
+    }
+
+    .email span {
+        font-size: 13px;
+    }
+
+    .phone-number img {
+        margin-top: 4px;
+        width: 15px;
+        height: 14px;
+    }
+
+    .phone-number {
+        width: 154px;
+    }
+
+    .phone-number span {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .middle-btns {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middle-btns .btn p {
+        font-size: 20px;
+        /* letter-spacing: 5px; */
+    }
+
+    .middle-text .logo {
+        padding-left: 30px;
+        margin: 5px 0px 0px 20px;
+    }
+
+    .middle-btns .btn .drop-down {
+        width: 12px;
+        right: 0px;
+        height: 6px;
+    }
+
+    .middle-btns .btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .middle-text .logo img {
+        width: 55px;
+        height: 50px;
+    }
+
+    .btn .instagram-icon {
+        height: 20px;
+    }
+
+    .btn .instagram-icon .inst-crcle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn .instagram-icon .inst-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .middle-btns .btn {
+        width: 80%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .btn .instagram-icon .inst-border {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width:625px) {
+    .header-content-in {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:581px) {
+    .middle-text .logo img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .middle-text {
+        width: 534px;
+    }
+
+    .middle-text .text .title {
+        font-size: 10px;
+    }
+
+    .middle-text .text .body {
+        font-size: 12px;
+    }
+
+    .middle-btns .btn img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .middle-btns .btn p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:537px) {
+    .middle-text .text {
+        height: 30px;
+        width: 400px;
+    }
+}
+
+/* @media only screen and(max-width:533px){
+    .middle-text .text{
+        width: 400px;
+    }
+} */
