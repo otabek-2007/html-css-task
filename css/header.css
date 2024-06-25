@@ -387,11 +387,11 @@
 
 .select-container label {
     color: rgba(255, 255, 255, 1);
-    font-size: 19px;
     margin-left: 5px;
 }
 
 .select-container label span {
+    font-size: 19px;
     margin-left: 10px;
 }
 

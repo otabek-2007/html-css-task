@@ -291,11 +291,12 @@
 .show-page-bar {
     padding-left: 17px;
     max-width: 508px;
+    margin-top: 6px;
 }
 
 .side-bar {
     width: 100%;
-    margin-top: 22px;
+    margin-top: 15px;
 }
 
 .bar-text p {
@@ -304,7 +305,8 @@
     font-weight: 600;
     line-height: 44.8px;
     text-align: left;
-    margin-top: revert;
+    margin-top: 53px;
+
 }
 
 .message-bottom {
@@ -486,9 +488,21 @@
 }
 
 .show-middle {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
     background: rgba(246, 247, 249, 1);
-    width: 1920px;
-    height: 537px;
+    height: 490px;
+}
+
+.card-mid {
+    display: flex;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 1920px;
     padding: 0px 60px;
 }
 
@@ -498,4 +512,401 @@
     font-weight: 600;
     line-height: 44.8px;
     text-align: left;
+}
+
+.cards {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.middle-card {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 15px 0px rgba(17, 22, 30, 0.05);
+    width: 584px;
+    height: 122px;
+    padding: 16px;
+    /* margin: 10px 10px 10px 0px; */
+    display: inline-flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.middle-cards-2 {
+    margin-top: 20px;
+}
+
+.middle-card p {
+    font-family: Museo Sans Cyrl;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(17, 22, 30, 1);
+
+}
+
+.middle-card img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 12px;
+    opacity: 0px;
+
+}
+
+.show-map {
+    max-width: 1920px;
+    margin: 100px auto 0px auto;
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-map p {
+    text-transform: uppercase;
+    font-family: Museo Sans Cyrl;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44.8px;
+    text-align: left;
+    color: rgba(17, 22, 30, 1);
+}
+
+.map-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.map img {
+    width: 1268px;
+    height: 700px;
+}
+
+.about-map {
+    width: 508px;
+    background: rgba(245, 248, 250, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    height: 700px;
+    border-radius: 16px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.map-card {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-title {
+    font-family: Museo Sans Cyrl;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+
+}
+
+.about-map .line {
+    width: 468px;
+    margin-top: 13px;
+    border: 1px solid rgba(221, 226, 234, 1);
+    height: 1px;
+    opacity: 0px;
+
+}
+
+.about-map .card {
+    width: 468px;
+    margin-top: 15px;
+    height: 180px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    left: 20px;
+    gap: 0px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.card p {
+    margin-top: 4px;
+    font-family: Museo Sans Cyrl;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.6px;
+    text-align: left;
+
+}
+
+.show-bottom {
+    width: 100%;
+    background: rgba(6, 73, 110, 1);
+    height: 797px;
+    margin-top: 100px;
+}
+
+.bottom-in {
+    height: 100%;
+    max-width: 1920px;
+    padding: 0px 60px;
+    margin: auto;
+}
+
+.bottom {
+    padding: 100px 0px;
+}
+
+.bottom-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-title .title {
+    font-family: Museo Sans Cyrl;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44.8px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.bottom-title img {
+    width: 90px;
+    height: 25px;
+    gap: 0px;
+    opacity: 0.6px;
+}
+
+.line-bottom {
+    position: relative;
+    max-width: 1800px;
+    margin-top: 20px;
+}
+
+.vertical-line-bottom {
+    display: flex;
+    position: absolute;
+    left: 0px;
+}
+
+.bottom-line-horiontal {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0%;
+    margin-top: 30px;
+    left: 0;
+    opacity: 0.4;
+}
+
+.dots {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    text-align: start;
+    position: absolute;
+}
+
+.bottom-dot {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    /* left: 10px; */
+    transform: translateY(-50%);
+
+}
+
+.bottom-dot .first {
+    left: 516px;
+    /* position: absolute;
+    width: 20px; */
+    /* height: 20px; */
+}
+
+.first-line {
+    left: 522px;
+    margin-top: 10px;
+}
+
+.second-line {
+    left: 988px;
+    margin-top: 10px;
+}
+
+.second {
+    left: 980px;
+    /* margin-top: 10px; */
+}
+
+.three-line {
+    left: 1444px;
+    margin-top: 10px;
+}
+
+.three {
+    left: 1436px;
+    /* margin-top: 10px; */
+}
+
+.green-line {
+    left: 12px;
+    margin-top: 10px;
+}
+
+.bottom-dot .dot {
+    gap: 10px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.bottom-dot .green-dot {
+    left: 5px;
+    background-color: green;
+}
+
+.bottom-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-line {
+    width: 432px;
+    margin-top: 112px;
+    height: 450px;
+}
+
+.two-card {
+    margin-left: 71px;
+}
+
+.three-card {
+    margin-left: 34px;
+}
+
+.four-card {
+    margin-left: 25px;
+}
+
+.card-line-date-green {
+    width: 136px;
+    height: 37px;
+    top: 240px;
+    left: 60px;
+    /* padding: 6px 8px 6px 8px; */
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.card-line-text {
+    font-family: Museo Sans Cyrl;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.card-line .img-bottom-line {
+    width: 432px;
+    height: 300px;
+    border-radius: 16px;
+    opacity: 0px;
+
+}
+
+.show-footer {
+    margin-top: 100px;
+    max-width: 1920px;
+    padding: 0px 60px;
+}
+
+.footer-in {
+    padding: 10px 0px;
+    width: 100%;
+    height: 400px;
+}
+
+.footer-text p {
+    font-family: Museo Sans Cyrl;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44.8px;
+    text-align: left;
+}
+.footer-card-bottom{
+    display: flex;
+    flex-direction: row;
+}
+.footer-card {
+    width: 432px;
+    padding: 20px;
+    height: 230px;
+    margin-top: 50px;
+    border-radius: 16px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+}
+
+.header-footer {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-footer .header-img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+
+.text-footer p {
+    font-family: Museo Sans Cyrl;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.header-img-text {
+    width: 93px;
+    height: 28px;
+    margin-left: 5px;
 }
