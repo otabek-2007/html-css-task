@@ -4,40 +4,21 @@
     box-sizing: border-box;
 }
 
-#headerIframe {
-    height: 350px;
+footer{
+    margin-top: 10px;
+    height: 100px;
 }
 
-#headerIframe.active-header {
-    height: 950px;
+.menu-ul.active {
+    display: flex;
 }
-#showPage{
-    height: 360vh;
+
+.bottom.active {
+    height: 430px;
 }
+
 iframe {
     display: block;
     border: none;
     width: 100%;
-}
-
-#footer {
-    height: 332px;
-}
-
-@media only screen and (max-width:1420px) {
-    #headerIframe {
-        height: 430px;
-    }
-}
-
-@media only screen and (max-width:770px) {
-    #headerIframe {
-        height: 850px;
-    }
-}
-
-@media only screen and (max-width:455px) {
-    #headerIframe {
-        height: 550px;
-    }
 }

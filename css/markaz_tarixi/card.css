@@ -1,0 +1,359 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 1920px;
+    padding: 0px 60px;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.2px;
+    color: rgba(160, 164, 170, 1);
+    text-align: left;
+}
+
+.title img {
+    width: 5px;
+    height: 10px;
+    margin: 0 10px;
+}
+
+.title span {
+    color: rgba(88, 92, 100, 1);
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+.text {
+    font-family: Museo Sans Cyrl;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44.8px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    padding: 24px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card img {
+    width: 200px;
+    height: 240px;
+}
+
+.card-text {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-title p {
+    font-family: Museo Sans Cyrl;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+    color: rgba(6, 73, 110, 1);
+
+}
+
+.text-title span {
+    font-family: Museo Sans Cyrl;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 300px;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(131, 136, 144, 1);
+
+}
+
+.text-body {
+    margin-top: 20px;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+}
+
+.body-text span {
+    font-family: Museo Sans Cyrl;
+    font-size: 19px;
+    font-weight: 400;
+    color: rgba(131, 136, 144, 1);
+    line-height: 26.6px;
+    text-align: left;
+}
+
+.body-text p {
+    font-family: Museo Sans Cyrl;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(6, 73, 110, 1);
+}
+
+.body-bar {
+    margin-left: 10px;
+    height: max-content;
+    width: 340px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(6, 73, 110, 0.1);
+}
+
+.bar-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-bar {
+    font-family: Museo Sans Cyrl;
+    color: rgba(6, 73, 110, 1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+.body-bar .bar-underline {
+    width: 100%;
+    height: 2px;
+    /* Adjust the height as needed */
+    background: url('/image/markaz_tarixi/line_bar.png') no-repeat;
+    background-size: contain;
+}
+
+
+.cards {
+    display: flex;
+    max-width: 1410px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body-card {
+    width: 705px;
+    padding: 24px;
+    margin-top: 20px;
+    display: flex;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    flex-direction: row;
+    border-radius: 12px;
+}
+
+.show-option {
+    margin-top: 15px;
+    font-family: Museo Sans Cyrl;
+    color: rgba(17, 22, 30, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.show-option:hover {
+    color: rgba(6, 73, 110, 1);
+}
+
+.show-options-container {
+    display: block;
+    font-size: 20px;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.show-options-container p {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1721px) {
+    .card img {
+        width: 170px;
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width:1650px) {
+    .card {
+        padding: 10px;
+    }
+
+    .text-body {
+        margin-top: 0px;
+    }
+
+    .text-title p {
+        font-size: 20px;
+    }
+
+    .text-title span {
+        font-size: 14px;
+    }
+
+    .body-text p {
+        font-size: 15px;
+    }
+
+    .body-text span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:1457px) {
+    .body-bar {
+        margin-top: 10px;
+        width: 400px;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:1450px) {
+    .cards {
+        width: max-content;
+    }
+}
+
+@media only screen and (max-width:923px) {
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .body-bar {
+        margin-left: 0px;
+        width: 530px;
+    }
+}
+@media only screen and (max-width:645px){
+    .container{
+        padding: 0px 30px;
+    }
+}
+@media only screen and (max-width:590px){
+    .container{
+        padding: 0px 10px;
+    }
+}
+@media only screen and (max-width:547px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card img{
+        width: 400px;
+    }
+    .body-bar{
+        width: 420px;
+    }
+    .card-text{
+        padding: 0px;
+    }
+    .text-body{
+        display: flex;
+        justify-content: space-between;
+    }
+    .show-options-container p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:441px){
+   
+    .card img{
+        width: 300px;
+    }
+    .body-bar{
+        width: 320px;
+    }
+    .card-text{
+        padding: 0px;
+    }
+    .text-body{
+        display: flex;
+        justify-content: space-between;
+    }
+    .show-options-container p{
+        font-size: 15px;
+    }
+    .title span{
+        font-size: 14px;
+    }
+    .text{
+        font-size: 27px;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .title-bar{
+        font-size: 20px;
+    }
+}

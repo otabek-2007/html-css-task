@@ -25,7 +25,7 @@
 }
 
 .title {
-    /* display: inline-flex; */
+    display: inline-flex;
     align-items: center;
     font-family: Museo Sans Cyrl;
     font-size: 18px;
@@ -60,7 +60,8 @@
 }
 
 .content-body {
-    margin-top: 10px;
+    height: max-content;
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -101,21 +102,6 @@
     align-items: flex-start;
 }
 
-.body-text .body-content {
-    margin-top: 20px;
-    padding-right: 10px;
-}
-
-.card-bottom-download-container {
-    display: flex;
-    margin-top: 10px;
-    /* justify-content: space-around; */
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .title-bar {
     font-family: Museo Sans Cyrl;
     color: rgba(6, 73, 110, 1);
@@ -133,49 +119,6 @@
     background-size: contain;
 }
 
-.card-body-content {
-    background: rgba(245, 248, 250, 1);
-    margin-top: 10px;
-    border-radius: 12px;
-    padding: 20px;
-    border: 1px solid rgba(221, 226, 234, 1)
-}
-
-.card-body-content p {
-    font-family: Museo Sans Cyrl;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    color: rgba(17, 22, 30, 1);
-}
-
-.card-body-content span img {
-    width: 20px;
-    margin-left: 3px;
-    height: 20px;
-}
-
-.card-body-content span {
-    display: inline-flex;
-    align-items: center;
-    font-family: Museo Sans Cyrl;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25.2px;
-    text-align: left;
-    color: rgba(0, 166, 81, 1);
-}
-
-.card-date p {
-    margin-top: 0px;
-    color: rgba(131, 136, 144, 1);
-    font-family: Museo Sans Cyrl;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25.2px;
-    text-align: left;
-}
 
 .cards {
     display: flex;
@@ -195,45 +138,6 @@
     box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
     flex-direction: row;
     border-radius: 12px;
-}
-
-.card-bottom-download {
-    background: rgba(245, 248, 250, 1);
-    border: 1px solid rgba(221, 226, 234, 1);
-    border-radius: 12;
-    padding: 10px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: start;
-    /* align-items: flex-start; */
-}
-
-.card-bottom-download p {
-    font-family: Museo Sans Cyrl;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    color: rgba(17, 22, 30, 1);
-}
-
-.size-text {
-    font-family: Museo Sans Cyrl;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25.2px;
-    text-align: left;
-    color: rgba(131, 136, 144, 1);
-}
-
-.download-btn {
-    font-family: Museo Sans Cyrl;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25.2px;
-    display: flex;
-    justify-content: right;
-    color: rgba(0, 166, 81, 1);
 }
 
 .card-img img {
@@ -278,39 +182,6 @@
     display: flex;
     margin-top: 10px;
     flex-direction: row;
-}
-
-.download-bottom {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.table-exel {
-    margin-top: 10px;
-    display: inline-flex;
-    padding: 4px;
-    width: max-content;
-    background: rgba(234, 238, 245, 1);
-    gap: 10px;
-    border-radius: 16px;
-}
-
-.table-exel p {
-    padding: 5px 50px;
-}
-.exel-img{
-    max-width: 100%;
-}
-.exel-img img{
-    width: 100%;
-}
-.active_date_table {
-    padding: 0px 25px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 10px 0px rgba(17, 22, 30, 0.1);
-    border-radius: 12px;
 }
 
 .card-bottom {
@@ -389,16 +260,11 @@
         flex-direction: column;
     }
 
-    .body-bar {
-        width: 100%;
-    }
-
     .body-img img {
         padding: 0;
     }
 
     .body-bar {
-        width: 350px;
         margin-top: 10px;
     }
 }
@@ -419,10 +285,6 @@
         flex-direction: column;
     }
 
-    .card-body-content p {
-        margin-top: 0px;
-    }
-
     .body-main {
         margin-top: 20px;
         justify-content: space-between;
@@ -430,7 +292,9 @@
     }
 
     .body-bar {
-        margin-left: 10px;
+        width: 100%;
+        /* margin-
+        left: 10px; */
         margin-top: 0;
     }
 }
@@ -468,28 +332,11 @@
         /* height: 500px; */
     }
 }
-@media only screen and (max-width:811px){
-    .table-exel p{
-        padding: 0px 25px;
-    }
-}
 
 @media only screen and (max-width:520px) {
     .body-img img {
         width: 100%;
         height: 300px;
-    }
-
-    .card-body-content p {
-        font-size: 15px;
-    }
-
-    .card-body-content {
-        padding: 20px 10px;
-    }
-
-    .card-body-content span {
-        font-size: 11px;
     }
 
     .body-bar {
@@ -509,8 +356,7 @@
     }
 
     .text {
-        line-height: 26px;
-        font-size: 17px;
+        font-size: 20px;
         margin-top: 0px;
     }
 
@@ -530,6 +376,7 @@
 
     .body-text {
         display: block;
+        margin-top: 10px;
         font-size: 15px;
         line-height: 24px;
     }
@@ -539,16 +386,4 @@
     }
 }
 
-@media only screen and (max-width:462px) {
-    .table-exel{
-        padding: 0px;
-    }
-    .table-exel p{
-        padding: 0px 15px;
-        font-size: 10px;
-    }
-    .active_date_table {
-        padding: 0px 10px;
-        margin: 10px;
-    }
-}
+@media only screen and (max-width:500px) {}

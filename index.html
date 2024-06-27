@@ -5,11 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
     <link rel="stylesheet" href="/css/header_responsive_770.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <iframe id="headerIframe" src="/layout/header.html"></iframe>
-    <iframe id="showPage" src="/page/markaz_tarixi/muassasa_yangiliklari.html"></iframe>
-    <iframe src="/layout/footer.html"></iframe>
+    <header>
+      <div class="header-container">
+        <div class="header-content">
+          <div class="header-top">
+            <div class="logo-top"></div>
+            <div class="header-content-in">
+              <div class="header-left">
+                <div class="header-icon">
+                  <img src="/image/error.png" class="error-img-out" alt="" />
+                  <img src="/image/error_in.png" class="error-img-in" alt="" />
+                </div>
+                <div class="header-text">
+                  <p>Сайт тест режимида ишламоқда</p>
+                </div>
+              </div>
+              <div class="header-right">
+                <div class="phone-number">
+                  <img src="/image/phone.png" alt="" />
+                  <span>+ (998) 71-232-50-53</span>
+                </div>
+                <div class="email">
+                  <img src="/image/email.png" alt="" />
+                  <span>info@ima.uz</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle-container">
+        <div class="middle-content">
+          <div class="middle-content-in">
+            <div class="middle-text">
+              <div class="logo">
+                <img src="/image/logo.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="title">
+                  ЎЗБEКИСТОН РEСПУБЛИКАСИ АДЛИЯ ВАЗИРЛИГИ ҲУЗУРИДАГИ
+                </p>
+                <p class="body">
+                  «ИНТEЛЛEКТУАЛ МУЛК МАРКАЗИ» ДАВЛАТ МУАССАСАСИ
+                </p>
+              </div>
+            </div>
+            <div class="middle-btns">
+              <div class="btn">
+                <img src="/image/glass.png" alt="" />
+                <p>Махсус имкониятлар</p>
+              </div>
+              <div class="btn">
+                <img src="/image/phone_app.png" alt="" />
+                <p>Мобил версия</p>
+              </div>
+              <div class="btn">
+                <img src="/image/search.png" alt="" />
+                <p>Излаш</p>
+              </div>
+              <div class="btn">
+                <img src="/image/flag.png" alt="" />
+                <p>Ўзбекча</p>
+                <img
+                  class="drop-down"
+                  src="/image/drow_down_header.png"
+                  alt=""
+                />
+              </div>
+              <div class="btn">
+                <div class="instagram-icon">
+                  <img
+                    class="inst-border"
+                    src="/image/insta_border.png"
+                    alt=""
+                  />
+                  <img class="inst-crcle" src="/image/insta_srcel.png" alt="" />
+                  <img class="inst-dot" src="/image/insta_dot.png" alt="" />
+                </div>
+                <img src="/image/facebook.png" alt="" />
+                <img src="/image/telegram.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bottom-in">
+          <div class="bottom-content">
+            <div class="footer-add">
+              <img src="/image/menu_bar.png" alt="" />
+            </div>
+            <div class="main-menu">
+              <ul class="menu-ul" id="menu-container">
+                <!-- Menu items will be created here by JavaScript -->
+              </ul>
+            </div>
+            <div class="gamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <iframe
+      id="showPage"
+      src="/page/hamkorlik/asosiy_faoliyat.html"
+      frameborder="0"
+      scrolling="no"
+      onload="resizeIframe(this)"
+    ></iframe>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+        </div>
+      </div>
+    </footer>
+
     <script src="/js/app.js"></script>
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height =
+          obj.contentWindow.document.documentElement.scrollHeight + "px";
+      }
+    </script>
   </body>
 </html>
