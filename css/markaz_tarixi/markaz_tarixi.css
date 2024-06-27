@@ -62,6 +62,7 @@
 .content-body {
     margin-top: 10px;
     width: 100%;
+    gap: 10px;
     display: flex;
     flex-direction: row;
 }
@@ -135,7 +136,7 @@
 
 .card-body-content {
     background: rgba(245, 248, 250, 1);
-    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 12px;
     padding: 20px;
     border: 1px solid rgba(221, 226, 234, 1)
@@ -430,7 +431,7 @@
     }
 
     .body-bar {
-        margin-left: 10px;
+        /* margin-left: 10px; */
         margin-top: 0;
     }
 }
@@ -549,6 +550,6 @@
     }
     .active_date_table {
         padding: 0px 10px;
-        margin: 10px;
+        /* margin: 10px; */
     }
 }

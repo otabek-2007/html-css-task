@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 30px auto 0;
+    padding: 0 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    /* display: inline-flex; */
+    align-items: center;
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.2px;
+    color: rgba(160, 164, 170, 1);
+    text-align: left;
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.title img {
+    width: 5px;
+    height: 10px;
+    margin: 0 10px;
+}
+
+.title span {
+    color: rgba(88, 92, 100, 1);
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+.text {
+    font-family: Museo Sans Cyrl;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44.8px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.body-text {
+    width: 100%;
+}
+
+.body-img img {
+    padding: 0 10px;
+    width: 584px;
+    object-fit: cover;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.body-main {
+    display: flex;
+}
+
+.body-bar {
+    height: max-content;
+    width: 340px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(6, 73, 110, 0.1);
+}
+
+.bar-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-bar {
+    font-family: Museo Sans Cyrl;
+    color: rgba(6, 73, 110, 1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+.body-bar .bar-underline {
+    width: 100%;
+    height: 2px;
+    /* Adjust the height as needed */
+    background: url('/image/markaz_tarixi/line_bar.png') no-repeat;
+    background-size: contain;
+}
+
+.show-option {
+    margin-top: 15px;
+    font-family: Museo Sans Cyrl;
+    color: rgba(17, 22, 30, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.show-option:hover {
+    color: rgba(6, 73, 110, 1);
+}
+
+.show-options-container {
+    display: block;
+    font-size: 20px;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.show-options-container p {
+    margin-top: 10px;
+}
+
+.content-body {
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.data-card {
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid rgba(239, 243, 249, 1);
+    background: rgba(245, 248, 250, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    width: 100%;
+}
+
+.top-card {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.data-card-bottom {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    width: 100%;
+}
+
+.data-card-bottom p {
+    font-family: Museo Sans Cyrl;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    text-align: left;
+    color: rgba(17, 22, 30, 1);
+
+}
+
+.line-card {
+    margin-top: 10px;
+    border: 1px solid rgba(221, 226, 234, 1)
+}
+
+.top-card p {
+    font-family: Museo Sans Cyrl;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    text-align: left;
+    color: rgba(17, 22, 30, 1);
+}
+
+.data-card p {
+    font-family: Museo Sans Cyrl;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.6px;
+    text-align: left;
+    color: rgba(6, 73, 110, 1);
+}
+
+.data-card span {
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: rgba(160, 164, 170, 1);
+
+}
+
+@media only screen and (max-width:1170px) {
+    .content-body {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:812px) {
+    .text {
+        font-size: 25px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .title span {
+        font-size: 15px;
+
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .container {
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    .top-card p {
+        font-size: 15px;
+    }
+
+    .data-card {
+        padding: 10px;
+    }
+
+    .data-card-bottom {
+        padding: 10px;
+    }
+
+    .data-card-bottom p {
+        font-size: 15px;
+
+    }
+}

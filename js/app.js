@@ -163,7 +163,7 @@ const menu = [
           {
             id: "4_1_5",
             name: "БИМТ ҳорижий давлатлардаги ТИҚҚМлар тармоқлари",
-            src: "/page/hamkorlik",
+            src: "/page/hamkorlik/BIMT_xorij.html",
           },
           {
             id: "4_1_6",
@@ -187,22 +187,27 @@ const menu = [
       {
         id: "5_1",
         name: "Ихтиро ва фойдали моделлар бўйича",
+        src: "/page/markaz_xizmatlari/TIKKM_xujjatlar.html",
       },
       {
         id: "5_2",
         name: "Саноат намунаси, географик кўрсаткичлар, товар келиб чиққан жой номи буйича",
+        src: "/page/markaz_xizmatlari/sanoat_namunasi.html",
       },
       {
         id: "5_3",
         name: "Товар белгиси ва кўрсатиш хизмат белгилари бўйича",
+        src: "/page/markaz_xizmatlari/tovar_belgisi.html",
       },
       {
         id: "5_4",
         name: "Муаллифлик хукуки объектларини депонентлаш, ЭҲМ учун дастур ва маълумотлар бўйича",
+        src: "/page/markaz_xizmatlari/mualliflik_xuquqi.html",
       },
       {
         id: "5_5",
         name: "Ўкув курслари буйича",
+        src: "/page/markaz_xizmatlari/oquv_kurslari.html",
       },
     ],
   },
@@ -231,18 +236,22 @@ const menu = [
           {
             id: "7_1_1",
             name: "Расмий ахборотнома",
+            src: "/page/ochiq_malumotlar/rasmiy_axborotlar.html",
           },
           {
             id: "7_1_2",
             name: "Йиллик курсаткичлар",
+            src: "/page/ochiq_malumotlar/yillik_kursatgichlar.html",
           },
           {
             id: "7_1_3",
             name: "Йиллик ҳисобот",
+            src: "/page/ochiq_malumotlar/yillik_hisobotlar.html",
           },
           {
             id: "7_1_4",
             name: "Услубий қўлламалар",
+            src: "/page/ochiq_malumotlar/uslubiy_qollanmalar.html",
           },
         ],
       },
