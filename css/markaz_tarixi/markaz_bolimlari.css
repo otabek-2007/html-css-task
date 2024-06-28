@@ -80,8 +80,6 @@ body {
     flex-direction: row;
 }
 
-
-
 .card {
     width: 49%;
     padding: 24px;
@@ -97,13 +95,15 @@ body {
     width: 200px;
     border-radius: 8px;
     object-fit: cover;
-    height: 240px;
+    height: 100%;
 }
 
 .card-text {
+    height: 100%;
     gap: 10px;
     padding: 0 20px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -265,11 +265,13 @@ body {
         padding: 0px;
     }
 }
+
 @media only screen and (max-width:1550px) {
     .container {
         padding: 0px 30px;
     }
 }
+
 @media only screen and (max-width:1382px) {
     .cards {
         gap: 10px;
@@ -288,6 +290,7 @@ body {
     .body-text p {
         font-size: 15px;
     }
+
     .body-text span {
         font-size: 17px;
     }
@@ -309,10 +312,11 @@ body {
     .text-title p {
         font-size: 21px;
     }
+
     .body-text p {
         font-size: 13px;
     }
-    
+
     .body-text span {
         font-size: 14px;
     }
@@ -334,12 +338,15 @@ body {
     .text-title p {
         font-size: 30px;
     }
-    .body-text p{
+
+    .body-text p {
         font-size: 19px;
     }
-    .body-text span{
+
+    .body-text span {
         font-size: 19px;
     }
+
     .cards {
         gap: 20px;
         flex-direction: column;
@@ -362,6 +369,7 @@ body {
 
 }
 
+
 @media only screen and (max-width:730px) {
     .card-content {
         gap: 10px;
@@ -369,9 +377,9 @@ body {
     }
 
     .body-bar {
-        width: 100%;
         margin: 0px;
     }
+
     .body-text p {
         font-size: 17px;
     }
@@ -379,6 +387,7 @@ body {
     .body-text span {
         font-size: 16px;
     }
+
     .card img {
         height: 400px;
     }
@@ -394,12 +403,10 @@ body {
     .card img {
         height: 250px;
     }
-    .body-bar{
-        padding: 10px;
-    }
     .card{
         padding: 10px;
     }
+
     .text-title span {
         font-size: 15px;
     }
@@ -436,7 +443,9 @@ body {
         margin: 0px;
         font-size: 20px;
     }
-
+    .body-bar{
+        padding: 10px;
+    }
     .title {
         font-size: 15px;
     }

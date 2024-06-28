@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "MuseoSansCyrl300";
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot");
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff") format("woff"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    font-family: "MuseoSansCyrl300", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +20,7 @@
 
 .container {
     max-width: 1920px;
-    margin: 30px auto 0;
+    margin: 50px auto 0;
     padding: 0 60px;
 }
 
@@ -19,15 +33,14 @@
 .content-title {
     display: flex;
     flex-direction: column;
+    gap: 17px;
     width: 100%;
     word-break: break-word;
     overflow-wrap: break-word;
 }
 
 .title {
-    /* display: inline-flex; */
     align-items: center;
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     font-weight: 300;
     line-height: 25.2px;
@@ -43,7 +56,6 @@
 
 .title span {
     color: rgba(88, 92, 100, 1);
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -51,31 +63,30 @@
 }
 
 .text {
-    font-family: Museo Sans Cyrl;
     font-size: 32px;
     font-weight: 600;
     line-height: 44.8px;
     text-align: left;
-    margin-top: 10px;
 }
 
 .content-body {
     margin-top: 10px;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
     display: flex;
     flex-direction: row;
 }
 
 .body-text {
-    font-family: Museo Sans Cyrl;
+    gap: 10px;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
     font-weight: 400;
     line-height: 28px;
 }
 
 .body-img img {
-    padding: 0 10px;
     width: 584px;
     object-fit: cover;
     height: 450px;
@@ -110,7 +121,6 @@
 .card-bottom-download-container {
     display: flex;
     margin-top: 10px;
-    /* justify-content: space-around; */
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
@@ -118,7 +128,6 @@
 }
 
 .title-bar {
-    font-family: Museo Sans Cyrl;
     color: rgba(6, 73, 110, 1);
     font-size: 24px;
     font-weight: 600;
@@ -129,9 +138,14 @@
 .body-bar .bar-underline {
     width: 100%;
     height: 2px;
-    /* Adjust the height as needed */
     background: url('/image/markaz_tarixi/line_bar.png') no-repeat;
     background-size: contain;
+}
+
+.body_text_in {
+    gap: 29px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-body-content {
@@ -143,7 +157,6 @@
 }
 
 .card-body-content p {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -160,7 +173,6 @@
 .card-body-content span {
     display: inline-flex;
     align-items: center;
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -171,7 +183,6 @@
 .card-date p {
     margin-top: 0px;
     color: rgba(131, 136, 144, 1);
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -206,11 +217,9 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: start;
-    /* align-items: flex-start; */
 }
 
 .card-bottom-download p {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -219,7 +228,6 @@
 }
 
 .size-text {
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -228,7 +236,6 @@
 }
 
 .download-btn {
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -256,7 +263,6 @@
 .card-title {}
 
 .card-title p {
-    font-family: Museo Sans Cyrl;
     font-size: 24px;
     font-weight: 600;
     line-height: 33.6px;
@@ -267,7 +273,6 @@
 }
 
 .card-title span {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     font-weight: 400;
     line-height: 50px;
@@ -301,12 +306,15 @@
 .table-exel p {
     padding: 5px 50px;
 }
-.exel-img{
+
+.exel-img {
     max-width: 100%;
 }
-.exel-img img{
+
+.exel-img img {
     width: 100%;
 }
+
 .active_date_table {
     padding: 0px 25px;
     background: rgba(255, 255, 255, 1);
@@ -320,7 +328,6 @@
 }
 
 .card-bottom span {
-    font-family: Museo Sans Cyrl;
     font-size: 19px;
     font-weight: 400;
     line-height: 26.6px;
@@ -333,7 +340,6 @@
 }
 
 .card-bottom p {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -350,7 +356,6 @@
 
 .title-content {
     color: rgba(0, 60, 93, 1);
-    font-family: Museo Sans Cyrl;
     font-size: 24px;
     font-weight: 600;
     margin-top: 15px;
@@ -360,7 +365,6 @@
 
 .show-option {
     margin-top: 15px;
-    font-family: Museo Sans Cyrl;
     color: rgba(17, 22, 30, 1);
     font-size: 20px;
     font-weight: 400;
@@ -372,9 +376,14 @@
     color: rgba(6, 73, 110, 1);
 }
 
+.text-indent {
+    text-indent: 20px;
+}
+
 .show-options-container {
-    display: block;
+    display: flex;
     font-size: 20px;
+    gap: 12px;
     flex-direction: column;
     width: 100%;
     word-break: break-word;
@@ -400,7 +409,25 @@
 
     .body-bar {
         width: 350px;
-        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:1550px) {
+    .container {
+        padding: 0px 30px;
+    }
+
+    .body-text {
+        flex-direction: column-reverse;
+    }
+
+    .body-img img {
+        width: 100%;
+        height: 550px;
+    }
+
+    .body-bar {
+        width: 550px;
     }
 }
 
@@ -409,33 +436,77 @@
         padding: 0 30px;
     }
 
-    .body-img img {
-        width: 500px;
-        height: 450px;
+    .body-bar {
+        width: 400px;
     }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width:1275px) {}
+
+@media only screen and (max-width:1110px) {
+    .body-img img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .title span {
+        font-size: 16px;
+    }
+
     .content-body {
-        flex-direction: column;
-    }
-
-    .card-body-content p {
-        margin-top: 0px;
-    }
-
-    .body-main {
-        margin-top: 20px;
-        justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column-reverse;
     }
 
     .body-bar {
-        /* margin-left: 10px; */
-        margin-top: 0;
+        width: 100%;
     }
 }
 
+@media only screen and (max-width:533px) {
+    .container {
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .body-bar {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .body-img img {
+        height: 300px;
+    }
+
+    .show-options-container {
+        font-size: 17px;
+        gap: 5px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .title-bar {
+        font-size: 19px;
+    }
+
+    .body-text {
+        font-size: 18px;
+    }
+}
+
+/* 
 @media only screen and (max-width: 930px) {
     .body-img img {
         width: 440px;
@@ -466,11 +537,11 @@
 
     .body-img img {
         width: 100%;
-        /* height: 500px; */
     }
 }
-@media only screen and (max-width:811px){
-    .table-exel p{
+
+@media only screen and (max-width:811px) {
+    .table-exel p {
         padding: 0px 25px;
     }
 }
@@ -541,15 +612,16 @@
 }
 
 @media only screen and (max-width:462px) {
-    .table-exel{
+    .table-exel {
         padding: 0px;
     }
-    .table-exel p{
+
+    .table-exel p {
         padding: 0px 15px;
         font-size: 10px;
     }
+
     .active_date_table {
         padding: 0px 10px;
-        /* margin: 10px; */
     }
-}
+} */

@@ -5,9 +5,17 @@
 }
 
 @font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: url('fonts/MuseoSansCyrl-Regular.woff2') format('woff2'),
-        url('fonts/MuseoSansCyrl-Regular.woff') format('woff');
+    font-family: "MuseoSansCyrl300";
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot");
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff") format("woff"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    font-family: "MuseoSansCyrl300", sans-serif;
 }
 
 .header-container {
@@ -38,8 +46,6 @@
 }
 
 .header-text p {
-    /* margin-left: 10px; */
-    font-family: 'Museo Sans Cyrl';
     font-size: 18px;
     font-weight: 300;
     line-height: 25.2px;
@@ -113,7 +119,6 @@
 }
 
 .phone-number span {
-    font-family: "Museo Sans Cyrl";
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -123,7 +128,6 @@
 
 .email {
     display: inline-flex;
-    width: 130px;
     height: 25px;
     top: 16px;
     gap: 6px;
@@ -132,7 +136,6 @@
 }
 
 .email span {
-    font-family: "Museo Sans Cyrl";
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -158,7 +161,6 @@
     max-width: 1920px;
     padding: 0px 60px;
     margin: auto;
-    /* height: 80px; */
 }
 
 .middle-content-in {
@@ -208,7 +210,6 @@
 }
 
 .text .title {
-    font-family: "Museo Sans Cyrl";
     font-size: 20px;
     color: rgba(131, 136, 144, 1);
     font-weight: 300;
@@ -217,7 +218,6 @@
 }
 
 .text .body {
-    font-family: "Museo Sans Cyrl";
     color: rgba(17, 22, 30, 1);
     font-size: 23px;
     font-weight: 600;
@@ -248,7 +248,6 @@
 }
 
 .btn p {
-    font-family: "Museo Sans Cyrl";
     font-size: 19px;
     font-weight: 300;
     line-height: 26.6px;
@@ -364,7 +363,6 @@
 .li-content {
     padding: 10px 15px;
     position: relative;
-    font-family: Museo Sans Cyrl;
     font-size: 19px;
     font-weight: 400;
     line-height: 26.6px;
@@ -381,7 +379,6 @@
     background-color: rgba(6, 73, 110, 1);
     padding: 10px;
     border-top: 5px #6ecdf0 solid;
-    /* width: calc(100% + 100px); */
     top: calc(100% + 5px);
     left: 50%;
     transform: translateX(-50%);
@@ -410,12 +407,9 @@
     height: 10px;
 }
 
-.popup-li-content ul li  {
-    /* padding: 5px 10px; */
-}
+.popup-li-content ul li {}
 
 .popup-li-content ul li:hover {
-    /* padding-left: 20px; */
     background-color: rgba(30, 91, 124, 1);
     transition: 0.3s all ease-in-out;
 
@@ -467,13 +461,23 @@
 .child-ul-content-in li {
     padding: 5px 10px;
 }
-.footer-container{
+
+.footer-container {
     margin-top: 10px;
     height: 100px;
     background-color: #6ecdf0;
     width: 100%;
 }
-
+@media only screen and (max-width:1840px){
+    .li-content{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:1810px){
+    .btn p{
+        font-size: 17px;
+    }
+}
 @media only screen and (max-width:1782px) {
     .middle-btns .btn p {
         font-size: 16px;
@@ -521,11 +525,17 @@
     .middle-text .text .body {
         font-size: 20px;
     }
-    .li-content{
-        font-size: 18px;
+
+    .li-content {
+        font-size: 17px;
     }
 }
 
+@media only screen and (max-width:1756px) {
+    .li-content {
+        font-size: 16px;
+    }
+}
 @media only screen and (max-width:1721px) {
     .li-content {
         font-size: 15px;
@@ -535,6 +545,14 @@
 @media screen and (max-width:1632px) {
     .select-container label {
         margin-left: 0px;
+    }
+}
+@media screen and (max-width:1613px) {
+    .li-content {
+        font-size: 13px;
+    }
+    .middle-btns .btn p{
+        font-size: 14px;
     }
 }
 
@@ -665,13 +683,22 @@
         padding: 0px 30px;
     }
 }
+@media only screen and (max-width:1564px) {
+    .li-content{
+        padding: 10px 12px;
+    }
+}
 
 @media only screen and (max-width:1505px) {
     .li-content {
         padding: 10px;
     }
 }
-
+@media only screen and (max-width:1440px){
+    .li-content{
+        font-size: 14px;
+    }
+}
 @media only screen and (max-width:1420px) {
     .popup-li-content ul {
         width: 240px;
@@ -799,7 +826,9 @@
 }
 
 @media only screen and (max-width:1278px) {
-
+    .li-content{
+        padding: 8px;
+    }
     .footer-add {
         padding: 20px 10px;
         align-items: start;
@@ -839,11 +868,13 @@
         font-size: 16px;
     }
 }
-@media only screen and (max-width:1222px){
-    .popup-li-content ul{
+
+@media only screen and (max-width:1222px) {
+    .popup-li-content ul {
         width: 160px;
     }
-    .popup-li-content{
+
+    .popup-li-content {
         z-index: 11;
     }
 }
@@ -929,7 +960,6 @@
     }
 
     .middle-text .logo {
-        padding-left: 30px;
         margin: 0px 0px 0px 20px;
     }
 
@@ -953,6 +983,10 @@
         width: 154px;
     }
 
+    .middle-content-in {
+        margin-top: 10px;
+    }
+
     .phone-number span {
         font-size: 13px;
     }
@@ -974,7 +1008,6 @@
     }
 
     .middle-text .logo {
-        padding-left: 30px;
         margin: 5px 0px 0px 20px;
     }
 
@@ -1014,7 +1047,7 @@
 
 
     .middle-btns .btn {
-        width: 80%;
+        width: 100%;
         height: 40px;
         padding: 10px;
     }
@@ -1022,6 +1055,14 @@
     .btn .instagram-icon .inst-border {
         width: 20px;
         height: 20px;
+    }
+
+    .footer-add {
+        padding: 20px 0px;
+    }
+
+    .gamburger {
+        padding: 25px 0px;
     }
 }
 
@@ -1038,7 +1079,7 @@
     }
 
     .middle-text {
-        width: 534px;
+        width: 100%;
     }
 
     .middle-text .text .title {
@@ -1058,8 +1099,9 @@
         font-size: 14px;
     }
 }
+
 @media only screen and (max-width:545px) {
-    .popup-li-content{
+    .popup-li-content {
         left: 0%;
         transform: translateX(0%);
         z-index: 1;
@@ -1069,29 +1111,23 @@
 @media only screen and (max-width:537px) {
     .middle-text .text {
         height: 30px;
-        width: 400px;
     }
 }
 
 @media only screen and (max-width:533px) {
-    .middle-text {
-        width: 400px;
+
+    .middle-content {
+        padding: 0px 10px;
     }
 
-    .middle-text .text .title {
-        text-align: center;
-    }
-
-    .middle-text .text .body {
-        text-align: center;
-    }
-
-    .logo {
-        display: none;
+    .middle-text .logo {
+        padding-left: 0px;
+        margin: 0px;
+        height: 60px;
     }
 
     .middle-btns {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .logo-top {
@@ -1106,6 +1142,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .text .title {
+        font-size: 10px;
+    }
+
+    .text .body {
+        font-size: 12px;
     }
 
     .bottom-in {
@@ -1130,13 +1174,27 @@
     }
 }
 
-@media only screen and (max-width:400px) {
-    .middle-text {
-        width: 360px;
+@media only screen and (max-width:438px) {
+    .middle-text .text .title {
+        font-size: 8px;
     }
 
-    .middle-text .text {
-        width: 360px;
+    .middle-text .text .body {
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width:420px) {
+    .middle-text .text .title {
+        font-size: 9px;
+    }
 
+    .middle-text .text .body {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .middle-text .logo {
+        width: 40px;
     }
 }

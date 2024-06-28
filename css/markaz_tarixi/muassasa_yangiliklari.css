@@ -3,7 +3,19 @@
     padding: 0px;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "MuseoSansCyrl300";
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot");
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff") format("woff"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
 
+body {
+    font-family: "MuseoSansCyrl300", sans-serif;
+}
 .show-page-container {
     max-width: 1920px;
     height: 100%;
@@ -83,7 +95,6 @@
 }
 
 .btn p {
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
@@ -110,7 +121,6 @@
 }
 
 .datas span {
-    font-family: Museo Sans Cyrl;
     font-size: 24px;
     font-weight: 600;
     line-height: 33.6px;
@@ -139,7 +149,6 @@
 }
 
 .datas p {
-    font-family: Museo Sans Cyrl;
     font-size: 19px;
     font-weight: 400;
     line-height: 26.6px;
@@ -301,7 +310,6 @@
 }
 
 .bar-text p {
-    font-family: Museo Sans Cyrl;
     font-size: 32px;
     font-weight: 600;
     line-height: 44.8px;
@@ -348,7 +356,6 @@
 }
 
 .message-bottom-2 p {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     margin-top: 20px;
     font-weight: 400;
@@ -368,7 +375,6 @@
 }
 
 .message-bottom p {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -383,7 +389,6 @@
 }
 
 .bar-title p {
-    font-family: "Museo Sans Cyrl";
     font-size: 32px;
     font-weight: 600;
     color: rgba(17, 22, 30, 1);
@@ -447,7 +452,6 @@
 
 .date-message {
     display: inline-flex;
-    font-family: Museo Sans Cyrl;
     font-size: 16px;
     font-weight: 300;
     color: rgba(131, 136, 144, 1);
@@ -464,7 +468,6 @@
 }
 
 .body-message {
-    font-family: Museo Sans Cyrl;
     font-size: 18px;
     margin-top: 14px;
     font-weight: 400;
@@ -475,7 +478,6 @@
 .link-message {
     margin-top: 10px;
     display: inline-flex;
-    font-family: Museo Sans Cyrl;
     font-size: 16px;
     font-weight: 300;
     line-height: 22.4px;
@@ -508,7 +510,6 @@
 }
 
 .show-middle .middle-text {
-    font-family: Museo Sans Cyrl;
     font-size: 32px;
     font-weight: 600;
     line-height: 44.8px;
@@ -534,7 +535,6 @@
     width: 584px;
     height: 122px;
     padding: 16px;
-    /* margin: 10px 10px 10px 0px; */
     display: inline-flex;
     align-items: center;
     border-radius: 16px;
@@ -545,7 +545,6 @@
 }
 
 .middle-card p {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -560,7 +559,6 @@
     padding: 10px;
     border-radius: 12px;
     opacity: 0px;
-
 }
 
 .show-map {
@@ -573,7 +571,6 @@
 
 .show-map p {
     text-transform: uppercase;
-    font-family: Museo Sans Cyrl;
     font-size: 32px;
     font-weight: 600;
     line-height: 44.8px;
@@ -611,7 +608,6 @@
 }
 
 .map-title {
-    font-family: Museo Sans Cyrl;
     font-size: 24px;
     font-weight: 600;
     line-height: 33.6px;
@@ -654,7 +650,6 @@
 
 .card p {
     margin-top: 4px;
-    font-family: Museo Sans Cyrl;
     font-size: 19px;
     font-weight: 400;
     line-height: 26.6px;
@@ -687,7 +682,6 @@
 }
 
 .bottom-title .title {
-    font-family: Museo Sans Cyrl;
     font-size: 32px;
     font-weight: 600;
     line-height: 44.8px;
@@ -831,7 +825,6 @@
 }
 
 .card-line-text {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     font-weight: 400;
     margin-top: 10px;
@@ -862,7 +855,6 @@
 }
 
 .footer-text p {
-    font-family: Museo Sans Cyrl;
     font-size: 32px;
     font-weight: 600;
     line-height: 44.8px;
@@ -897,7 +889,6 @@
 }
 
 .text-footer p {
-    font-family: Museo Sans Cyrl;
     font-size: 20px;
     padding: 10px;
     font-weight: 400;
