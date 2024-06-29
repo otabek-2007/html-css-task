@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 50px auto 0;
+    padding: 0 60px;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl300";
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot");
+    src: url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff") format("woff"),
+        url("../fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    font-family: "MuseoSansCyrl300", sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* .text-content img {
+    width: 100%;
+    margin-top: 10px;
+} */
+
+.title {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.2px;
+    color: rgba(160, 164, 170, 1);
+    text-align: left;
+}
+
+.title img {
+    width: 5px;
+    height: 10px;
+    margin: 0 10px;
+}
+
+.title span {
+    color: rgba(88, 92, 100, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+.text {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44.8px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.title-content {
+    color: rgba(0, 60, 93, 1);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+.title-bar {
+    color: rgba(6, 73, 110, 1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+.parag {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 5px;
+    line-height: 28px;
+}
+
+.sentence {
+    display: contents;
+    font-size: 20px;
+}
+
+.text-dot {
+    width: 5px;
+    transform: translateY(210%);
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    grid-column: 1;
+}
+
+.text-content {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+
+}
+
+.body-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+    color: rgba(6, 73, 110, 1);
+}
+
+.body-alert-top {
+    width: 100%;
+    padding: 20px;
+    background: rgba(224, 244, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    border-radius: 12px;
+}
+
+.alert-body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.alert-body span {
+    color: rgba(131, 136, 144, 1);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.6px;
+    text-align: left;
+}
+
+.alert-in {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-body p {
+    color: rgba(17, 22, 30, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.alert-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-body {
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-top-content {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-text {
+    gap: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.body-img img {
+    width: 584px;
+    object-fit: cover;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.body-main {
+    display: flex;
+}
+
+.body-bar {
+    height: max-content;
+    width: 340px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(6, 73, 110, 0.1);
+}
+
+.bar-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.body-text .body-content {
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.show-option {
+    margin-top: 15px;
+    color: rgba(17, 22, 30, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.show-option:hover {
+    color: rgba(6, 73, 110, 1);
+}
+
+.top-content-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.text-indent {
+    text-indent: 20px;
+}
+
+.show-options-container {
+    display: flex;
+    font-size: 20px;
+    gap: 12px;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.link img {
+    width: 24px;
+    height: 24px;
+}
+
+.show-options-container p {
+    margin-top: 10px;
+}
+
+.body-bar .bar-underline {
+    width: 100%;
+    height: 2px;
+    background: url('/image/markaz_tarixi/line_bar.png') no-repeat;
+    background-size: contain;
+}
+
+.content-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    gap: 10px;
+    padding: 24px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-card img {
+    width: 60px;
+}
+
+.title-card-top {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+    color: rgba(6, 73, 110, 1);
+}
+
+.data-card {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px 100px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.data span {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.6px;
+    text-align: left;
+    color: rgba(131, 136, 144, 1);
+}
+
+.data p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(17, 22, 30, 1);
+    gap: 10px 0px;
+}
+
+.line-card {
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.bottom-cards {
+    margin-top: 20px;
+    display: flex;
+    gap: 0px 20px;
+    width: 100%;
+}
+
+.bottom-card {
+    display: flex;
+    border: 1px solid rgba(221, 226, 234, 1);
+    width: 48%;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.bottom-card-title {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+
+.bottom-card-title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bottom-card-title-text p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    text-align: left;
+}
+
+.bottom-card-bottom {
+    display: flex;
+    gap: 0px 200px;
+    flex-direction: row;
+}
+
+.bottom-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-card-bottom span {
+    color: rgba(131, 136, 144, 1);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.6px;
+    text-align: left;
+}
+
+.bottom-card-bottom p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.bottom-card-title-text span {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.6px;
+    text-align: left;
+    color: rgba(131, 136, 144, 1);
+
+}
+
+@media only screen and (max-width:1710px) {
+    .data p {
+        font-size: 15px;
+    }
+
+    .data span {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1550px) {
+    .container {
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width:1530px) {
+    .bottom-card-title .bottom-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bottom-card-title-text {
+        gap: 5px;
+    }
+
+    .bottom-card-title-text p {
+        font-size: 17px;
+    }
+
+    .bottom-card-title-text span {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1521px) {
+    .text-content {
+        flex-direction: column-reverse;
+    }
+
+    .body-bar {
+        width: 100%;
+    }
+
+    .data p {
+        font-size: 20px;
+    }
+
+    .data span {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .bottom-card-bottom {
+        gap: 0px 100px;
+    }
+
+    .bottom-card-bottom span {
+        font-size: 14px;
+    }
+
+    .bottom-card-bottom p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .data span {
+        font-size: 14px;
+    }
+
+    .data p {
+        font-size: 15px;
+    }
+
+    .data {
+        gap: 0px;
+    }
+
+    .alert-title {
+        font-size: 19px;
+    }
+
+    .bottom-cards {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .bottom-card {
+        width: 100%;
+    }
+
+    .alert-data span {
+        font-size: 18px;
+    }
+
+    .alert-data p {
+        font-size: 16px;
+    }
+
+    .title-card-top {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .alert-title {
+        font-size: 16px;
+    }
+
+    .alert-data span {
+        font-size: 14px;
+    }
+
+    .alert-data p {
+        font-size: 13px;
+    }
+    .text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .title{
+        font-size: 15px;
+    }
+    .title span{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .alert-body {
+        flex-direction: column;
+    }
+
+    .bottom-card-bottom {
+        gap: 0px 50px;
+    }
+}
+@media screen and (max-width:533px){
+    .container{
+        padding: 0px 10px;
+    }
+    .card{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .bottom-card-title {
+        flex-direction: column;
+    }
+
+    .bottom-card-title .bottom-img {
+        width: 100%;
+        height: 250px;
+    }
+    .text{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .title{
+        font-size: 13px;
+    }
+    .title span{
+        font-size: 13px;
+    }
+}
