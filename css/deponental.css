@@ -126,6 +126,7 @@ body {
 
 .content-body {
     width: 100%;
+    margin-top: 30px;
     gap: 10px;
     display: flex;
     flex-direction: row;
@@ -145,6 +146,27 @@ body {
     font-weight: 400;
     line-height: 28px;
 }
+
+.table {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(239, 243, 249, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row .page {
+    width: 14px;
+    height: 18px;
+}
+
 
 .body-img img {
     width: 584px;
@@ -261,6 +283,57 @@ body {
     color: rgba(0, 166, 81, 1);
 }
 
+.search-content {
+    width: 100%;
+    gap: 10px 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 238, 245, 1);
+    box-shadow: 0px 4px 20px 0px rgba(6, 73, 110, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.search-word p {
+    color: rgba(131, 136, 144, 1);
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26.6px;
+    text-align: left;
+}
+
+.search-word {
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgba(221, 226, 234, 1);
+    background: rgba(245, 248, 250, 1);
+}
+
+.search-btn {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 12px;
+    background: rgba(6, 73, 110, 1);
+}
+
+.search-btn p {
+    font-size: 19px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26.6px;
+    text-align: left;
+}
+
+.search-btn .search-icon {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
 .download-text {
     font-size: 20px;
     font-weight: 400;
@@ -346,7 +419,7 @@ body {
 }
 
 @media only screen and (max-width:750px) {
-    .download-card{
+    .download-card {
         width: 100%;
     }
 }
@@ -388,9 +461,11 @@ body {
     .body-bar {
         padding: 10px;
     }
-    .download-card{
+
+    .download-card {
         padding: 10px;
     }
+
     .card {
         gap: 3px;
         padding: 10px;
