@@ -223,10 +223,17 @@ body {
     color: rgba(160, 164, 170, 1);
 
 }
-
+@media only screen and (max-width:1550px){
+    .container{
+        padding: 0px 30px;
+    }
+}
 @media only screen and (max-width:1170px) {
     .content-body {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .body-bar{
+        width: 100%;
     }
 }
 
@@ -253,9 +260,11 @@ body {
 
 @media only screen and (max-width:580px) {
     .container {
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
-
+    .body-bar{
+        padding: 0px 10px;
+    }
     .top-card p {
         font-size: 15px;
     }
