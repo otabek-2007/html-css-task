@@ -333,7 +333,7 @@ body {
 }
 
 .gamburger {
-    padding: 25px 10px;
+    padding: 25px 0px;
 }
 
 .gamburger i {
@@ -830,7 +830,7 @@ body {
         padding: 8px;
     }
     .footer-add {
-        padding: 20px 10px;
+        padding: 20px 0px;
         align-items: start;
     }
 }
@@ -928,7 +928,7 @@ body {
     }
 
     .middle-text {
-        width: 580px;
+        width: 550px;
         display: flex;
         justify-content: center;
     }
