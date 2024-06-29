@@ -205,6 +205,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+.card-top {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
 
 .pagination {
     width: 100%;
@@ -212,6 +218,9 @@ body {
     justify-content: center;
     margin-top: 30px;
     gap: 10px;
+}
+.content-main-img{
+    width: 100%;
 }
 
 .nums span {
@@ -237,6 +246,10 @@ body {
     width: 22px;
     height: 22px;
 }
+.card-top img {
+    width: 22px;
+    height: 22px;
+}
 
 .bottom-img-icon {
     width: 22px;
@@ -244,6 +257,14 @@ body {
 }
 
 .card-bottom span {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.2px;
+    text-align: left;
+    color: rgba(131, 136, 144, 1);
+    display: inline-flex;
+}
+.card-top span {
     font-size: 18px;
     font-weight: 300;
     line-height: 25.2px;
@@ -308,12 +329,18 @@ body {
     .body-bar {
         width: 100%;
     }
+    .text{
+        line-height: 30px;
+    }
 }
 
 @media only screen and (max-width:720px) {
     .nums span {
         padding: 7px 10px;
         font-size: 15px;
+    }
+    .text{
+        font-size: 27px;
     }
 }
 
