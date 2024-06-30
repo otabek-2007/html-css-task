@@ -412,7 +412,6 @@ body {
 .popup-li-content ul li:hover {
     background-color: rgba(30, 91, 124, 1);
     transition: 0.3s all ease-in-out;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -462,22 +461,19 @@ body {
     padding: 5px 10px;
 }
 
-.footer-container {
-    margin-top: 10px;
-    height: 100px;
-    background-color: #6ecdf0;
-    width: 100%;
-}
-@media only screen and (max-width:1840px){
-    .li-content{
+
+@media only screen and (max-width:1840px) {
+    .li-content {
         font-size: 18px;
     }
 }
-@media only screen and (max-width:1810px){
-    .btn p{
+
+@media only screen and (max-width:1810px) {
+    .btn p {
         font-size: 17px;
     }
 }
+
 @media only screen and (max-width:1782px) {
     .middle-btns .btn p {
         font-size: 16px;
@@ -536,6 +532,7 @@ body {
         font-size: 16px;
     }
 }
+
 @media only screen and (max-width:1721px) {
     .li-content {
         font-size: 15px;
@@ -547,11 +544,13 @@ body {
         margin-left: 0px;
     }
 }
+
 @media screen and (max-width:1613px) {
     .li-content {
         font-size: 13px;
     }
-    .middle-btns .btn p{
+
+    .middle-btns .btn p {
         font-size: 14px;
     }
 }
@@ -683,8 +682,9 @@ body {
         padding: 0px 30px;
     }
 }
+
 @media only screen and (max-width:1564px) {
-    .li-content{
+    .li-content {
         padding: 10px 12px;
     }
 }
@@ -694,11 +694,13 @@ body {
         padding: 10px;
     }
 }
-@media only screen and (max-width:1440px){
-    .li-content{
+
+@media only screen and (max-width:1440px) {
+    .li-content {
         font-size: 14px;
     }
 }
+
 @media only screen and (max-width:1420px) {
     .popup-li-content ul {
         width: 240px;
@@ -826,9 +828,10 @@ body {
 }
 
 @media only screen and (max-width:1278px) {
-    .li-content{
+    .li-content {
         padding: 8px;
     }
+
     .footer-add {
         padding: 20px 0px;
         align-items: start;
@@ -1183,6 +1186,7 @@ body {
         font-size: 9px;
     }
 }
+
 @media only screen and (max-width:420px) {
     .middle-text .text .title {
         font-size: 9px;

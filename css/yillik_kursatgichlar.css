@@ -86,6 +86,40 @@ body {
     display: flex;
 }
 
+.text-content-top {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 25.2px;
+    text-align: left;
+    color: rgba(38, 44, 52, 1);
+}
+
+.plus {
+    background: rgba(234, 238, 245, 1);
+    padding: 13px 14px;
+    border-radius: 12px;
+}
+
+.plus img {
+    width: 24px;
+    height: 24px;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 29px;
+    background: rgba(234, 238, 245, 1);
+    padding: 13px 14px;
+    border-radius: 12px;
+}
+
+.close img {
+    width: 24px;
+    height: 24px;
+}
+
 .body-bar {
     height: max-content;
     width: 340px;
@@ -174,6 +208,7 @@ body {
 
 .data-card-bottom {
     display: flex;
+    position: relative;
     padding: 20px;
     align-items: center;
     margin-bottom: 20px;
@@ -194,6 +229,34 @@ body {
     color: rgba(6, 73, 110, 1);
 }
 
+.title-close {
+    width: 90%;
+}
+.span-bar {
+    margin-top: 15px;
+    color: rgba(17, 22, 30, 1);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 28px;
+    text-align: left;
+    transition: 0.4s all ease-in-out;
+}
+
+.active-bar {
+    transform: translateX(10%);
+    color: rgba(6, 73, 110, 1);
+}
+
+.active-child-bar {
+    transform: translateX(10%);
+    color: rgba(6, 73, 110, 1);
+}
+
+.span-bar:hover {
+    transform: translateX(10%);
+    color: rgba(0, 60, 93, 1);
+}
 .line-card {
     margin-top: 10px;
     border: 1px solid rgba(221, 226, 234, 1)
@@ -271,6 +334,28 @@ body {
 
     .data-card-bottom {
         padding: 10px;
+    }
+
+    .title-close {
+        width: 92%;
+    }
+
+    .close {
+        padding: 10px;
+    }
+
+    .close img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .plus {
+        padding: 10px;
+    }
+
+    .plus img {
+        width: 15px;
+        height: 15px;
     }
 
     .data-card-bottom p {
