@@ -39,7 +39,6 @@ function createBar() {
 
     if (e.children) {
       const span = document.createElement("span");
-      // span.className = e.src === src ? "span-bar active-bar" : "span-bar";
       span.textContent = e.name;
       showOption.appendChild(span);
       span.className = "has-child-span";
@@ -49,7 +48,7 @@ function createBar() {
         activeLine.className = "active-line-span";
 
         if (childElement.src === src) {
-          spanChild.className = "child-span-bar active-child-bar";
+          spanChild.className = "child-span-bar active-child-bar active-bar";
         } else {
           spanChild.className = "child-span-bar";
         }
@@ -113,18 +112,32 @@ function createMenuItems(menus, parentUl) {
     img.className = "menu-icon";
 
     const span = document.createElement("span");
+    const activeLineLi = document.createElement("span");
+    activeLineLi.className = "active-li-line";
     span.textContent = menu.name;
 
     div.appendChild(span);
     div.appendChild(img);
     li.appendChild(div);
+    li.appendChild(activeLineLi);
     parentUl.appendChild(li);
 
     li.addEventListener("click", (event) => {
       event.stopPropagation();
-      if (menu.src) {
-        loadIframe(menu.src, menu);
-        closeAllMenus();
+
+      const isOpen = li.classList.contains("li-active-menu");
+
+      const allMenuItems = parentUl.querySelectorAll("li");
+      allMenuItems.forEach((menuItem) => {
+        menuItem.classList.remove("li-active-menu");
+      });
+
+      if (!isOpen) {
+        li.classList.add("li-active-menu");
+
+        if (menu.src) {
+          loadIframe(menu.src, menu);
+        }
       }
     });
 
@@ -143,7 +156,6 @@ function createMenuItems(menus, parentUl) {
       div.addEventListener("click", (event) => {
         event.stopPropagation();
 
-        // Hide all other popup menus
         const allPopups = document.querySelectorAll(".popup-li-content");
         allPopups.forEach((popup) => {
           popup.style.display = "none";
@@ -166,16 +178,20 @@ function createMenuChildItems(menus, parentUl, parentMenu) {
     div.className = "child-content-box";
 
     const img = document.createElement("img");
+    const divLine = document.createElement("div");
+
     img.src =
       menu.children && menu.children.length > 0
         ? "/image/drop_down_right.png"
         : "";
-    img.className = "child-menu-icon";
+    divLine.className = "child-menu-icon";
+    img.className = "child-menu-drop";
 
     const span = document.createElement("span");
     span.textContent = menu.name;
 
     div.appendChild(span);
+    div.appendChild(divLine);
     div.appendChild(img);
     li.appendChild(div);
     parentUl.appendChild(li);
@@ -185,6 +201,7 @@ function createMenuChildItems(menus, parentUl, parentMenu) {
       const src = event.currentTarget.getAttribute("src");
       if (src) {
         loadIframe(src, parentMenu);
+        closeAllMenus();
       }
     });
 
@@ -214,12 +231,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const footerContainer = document.querySelector(".footer-active");
   const footerAdd = document.querySelector(".footer-add-btn");
   const middleText = document.querySelector(".middle-text");
-  middleText.addEventListener("click", function () {
-    let src = '/page/markaz_tarixi/muassasa_yangiliklari.html'
-    let source = sessionStorage.getItem('src')
-    source == ser
 
+  middleText.addEventListener("click", function () {
+    let src = "/page/markaz_tarixi/muassasa_yangiliklari.html";
+    let source = sessionStorage.getItem("src");
+    source == src;
   });
+
   gamburger.addEventListener("click", (event) => {
     event.stopPropagation();
     menuContainer.classList.toggle("active");
@@ -230,10 +248,13 @@ document.addEventListener("DOMContentLoaded", () => {
     footerContainer.classList.toggle("active");
   });
 
-  window.addEventListener("click", () => {
-    if (footerContainer.classList.contains("active")) {
-      footerContainer.classList.remove("active");
+  window.addEventListener("click", (event) => {
+    if (!footerContainer.contains(event.target)) {
+      if (footerContainer.classList.contains("active")) {
+        footerContainer.classList.remove("active");
+      }
     }
+    closeAllMenus();
   });
 
   loadIframe();
@@ -256,26 +277,6 @@ function setFlexibleHeight() {
   t.style.height = t.contentWindow.document.documentElement.scrollHeight + "px";
 }
 
-window.addEventListener("click", () => {
-  const allPopups = document.querySelectorAll(".popup-li-content");
-  allPopups.forEach((popup) => {
-    popup.style.display = "none";
-  });
-  const allChildMenus = document.querySelectorAll(".child-ul-content-in");
-  allChildMenus.forEach((childMenu) => {
-    childMenu.style.display = "none";
-  });
-});
-
-const menuContainer = document.getElementById("menu-container");
-menuContainer.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
-
-const footerContainer = document.querySelector(".footer-active");
-footerContainer.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
 function closeAllMenus() {
   const allPopups = document.querySelectorAll(".popup-li-content");
   allPopups.forEach((popup) => {
@@ -287,3 +288,34 @@ function closeAllMenus() {
     childMenu.style.display = "none";
   });
 }
+
+const menuContainer = document.getElementById("menu-container");
+menuContainer.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+const footerContainer = document.querySelector(".footer-active");
+footerContainer.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+window.addEventListener("click", (event) => {
+  const isHeaderClick = event.target.closest("#menu-container");
+  const isFooterClick = event.target.closest(".footer-active");
+
+  if (!isHeaderClick && !isFooterClick) {
+    closeAllMenus();
+  }
+});
+
+const iframe = document.getElementById("showPage");
+iframe.addEventListener("load", () => {
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+  iframeDoc.addEventListener("click", (event) => {
+    const isMenuClick = event.target.closest("#menu-container");
+    if (!isMenuClick) {
+      closeAllMenus();
+    }
+  });
+});
