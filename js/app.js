@@ -13,8 +13,8 @@ function loadIframe(src = null, activeMenu = null) {
       sessionStorage.getItem("src") || "/page/ochiq_malumotlar/deponental.html";
   }
   document.getElementById("showPage").src = source;
-  // createBar();
 }
+
 function createBar() {
   const bar = JSON.parse(sessionStorage.getItem("menu_bar"));
 
@@ -39,25 +39,38 @@ function createBar() {
 
     if (e.children) {
       const span = document.createElement("span");
-      span.className = "span-bar active-bar";
+      // span.className = e.src === src ? "span-bar active-bar" : "span-bar";
       span.textContent = e.name;
       showOption.appendChild(span);
-
+      span.className = "has-child-span";
       e.children.forEach((childElement) => {
         const spanChild = document.createElement("span");
-        spanChild.className =
-          childElement.src === src
-            ? "child-span-bar active-child-bar"
-            : "child-span-bar";
+        const activeLine = document.createElement("span");
+        activeLine.className = "active-line-span";
+
+        if (childElement.src === src) {
+          spanChild.className = "child-span-bar active-child-bar";
+        } else {
+          spanChild.className = "child-span-bar";
+        }
         spanChild.setAttribute("src", childElement.src);
         spanChild.textContent = childElement.name;
-        showOptionChild.appendChild(spanChild);
+        spanChild.appendChild(activeLine);
+        span.appendChild(spanChild);
       });
     } else {
       const span = document.createElement("span");
-      span.className = e.src === src ? "span-bar active-bar" : "span-bar";
+      const activeLine = document.createElement("span");
+      activeLine.className = "active-line-span";
+      if (e.src === src) {
+        span.className = "span-bar active-bar";
+        activeLine.style.display = "flex";
+      } else {
+        span.className = "span-bar";
+      }
       span.setAttribute("src", e.src);
       span.textContent = e.name;
+      span.appendChild(activeLine);
       showOption.appendChild(span);
     }
   });
@@ -76,6 +89,14 @@ function createBar() {
   const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
   const mainBar = iframeDoc.querySelector(".body-main");
   mainBar.appendChild(bodyBar);
+
+  const spans = iframeDoc.querySelectorAll(".span-bar");
+
+  spans.forEach((span) => {
+    span.addEventListener("click", function (e) {
+      loadIframe(e.target.getAttribute("src"));
+    });
+  });
 }
 
 // json datagai itemlarni create qilib beradigan joy
@@ -103,6 +124,7 @@ function createMenuItems(menus, parentUl) {
       event.stopPropagation();
       if (menu.src) {
         loadIframe(menu.src, menu);
+        closeAllMenus();
       }
     });
 
@@ -121,11 +143,11 @@ function createMenuItems(menus, parentUl) {
       div.addEventListener("click", (event) => {
         event.stopPropagation();
 
-         // Hide all other popup menus
-         const allPopups = document.querySelectorAll(".popup-li-content");
-         allPopups.forEach((popup) => {
-           popup.style.display = "none";
-         });
+        // Hide all other popup menus
+        const allPopups = document.querySelectorAll(".popup-li-content");
+        allPopups.forEach((popup) => {
+          popup.style.display = "none";
+        });
 
         popupDiv.style.display =
           popupDiv.style.display === "block" ? "none" : "block";
@@ -133,6 +155,7 @@ function createMenuItems(menus, parentUl) {
     }
   });
 }
+
 // json datadagi item ning child bolsa yani child -> child ni create qiladigan joy
 function createMenuChildItems(menus, parentUl, parentMenu) {
   menus.forEach((menu) => {
@@ -190,38 +213,77 @@ document.addEventListener("DOMContentLoaded", () => {
   const gamburger = document.querySelector(".gamburger");
   const footerContainer = document.querySelector(".footer-active");
   const footerAdd = document.querySelector(".footer-add-btn");
+  const middleText = document.querySelector(".middle-text");
+  middleText.addEventListener("click", function () {
+    let src = '/page/markaz_tarixi/muassasa_yangiliklari.html'
+    let source = sessionStorage.getItem('src')
+    source == ser
 
-  gamburger.addEventListener("click", () => {
+  });
+  gamburger.addEventListener("click", (event) => {
+    event.stopPropagation();
     menuContainer.classList.toggle("active");
   });
 
-  footerAdd.addEventListener("click", function () {
+  footerAdd.addEventListener("click", (event) => {
+    event.stopPropagation();
     footerContainer.classList.toggle("active");
   });
+
+  window.addEventListener("click", () => {
+    if (footerContainer.classList.contains("active")) {
+      footerContainer.classList.remove("active");
+    }
+  });
+
   loadIframe();
 });
 
+const responsive_widths = [800, 1200];
+
+window.addEventListener("resize", () => {
+  const width = document.body.clientWidth;
+  setFlexibleHeight();
+});
+
+document.getElementById("showPage").onload = function () {
+  createBar();
+  setFlexibleHeight();
+};
+
+function setFlexibleHeight() {
+  const t = document.getElementById("showPage");
+  t.style.height = t.contentWindow.document.documentElement.scrollHeight + "px";
+}
+
 window.addEventListener("click", () => {
-  // Hide all popup menus
   const allPopups = document.querySelectorAll(".popup-li-content");
   allPopups.forEach((popup) => {
     popup.style.display = "none";
   });
-
-  // Hide all child menus
   const allChildMenus = document.querySelectorAll(".child-ul-content-in");
   allChildMenus.forEach((childMenu) => {
     childMenu.style.display = "none";
   });
 });
 
-document.getElementById("showPage").onload = function () {
-  createBar();
-  this.style.height =
-    this.contentWindow.document.documentElement.scrollHeight + "px";
-  // }
-  const span = document.querySelectorAll(".span-bar");
-  span.addEventListener("click", function (e) {
-    console.log(e.target);
+const menuContainer = document.getElementById("menu-container");
+menuContainer.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+const footerContainer = document.querySelector(".footer-active");
+footerContainer.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+function closeAllMenus() {
+  const allPopups = document.querySelectorAll(".popup-li-content");
+  allPopups.forEach((popup) => {
+    popup.style.display = "none";
   });
-};
+
+  const allChildMenus = document.querySelectorAll(".child-ul-content-in");
+  allChildMenus.forEach((childMenu) => {
+    childMenu.style.display = "none";
+  });
+}

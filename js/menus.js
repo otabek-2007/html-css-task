@@ -168,7 +168,7 @@ export default [
           {
             id: "4_1_6",
             name: "ТИҚҚМлар боғланиш учун маълумотлар",
-            src: "/page/hamkorlik",
+            src: "/page/hamkorlik/boglanish_malumotlari.html",
           },
         ],
       },
@@ -187,7 +187,7 @@ export default [
       {
         id: "5_1",
         name: "Ихтиро ва фойдали моделлар бўйича",
-        src: "/page/markaz_xizmatlari/TIKKM_xujjatlar.html",
+        src: "/page/markaz_xizmatlari/ixtiro_va_modellar.html",
       },
       {
         id: "5_2",
@@ -218,10 +218,12 @@ export default [
       {
         id: "6_1",
         name: "МХО депонентлаш учун аризани тўлдириш",
+        src: "/page/markaz_xizmatlari/oquv_kurslari.html",
       },
       {
         id: "6_2",
         name: "Депозитарийлар томонидан муаллифлик хукуки объектлари электрон нусхаларини ягона базага киритиш",
+        src: "/page/markaz_xizmatlari/oquv_kurslari.html",
       },
     ],
   },
@@ -246,7 +248,7 @@ export default [
           {
             id: "7_1_3",
             name: "Йиллик ҳисобот",
-            src: "/page/ochiq_malumotlar/yillik_hisobotlar.html",
+            src: "/page/ochiq_malumotlar/yillik_hisobot.html",
           },
           {
             id: "7_1_4",
@@ -262,26 +264,32 @@ export default [
           {
             id: "7_2_1",
             name: "Ихтиро ва фойдали моделлар",
+            src: "/page/ochiq_malumotlar/ixtiro_foydali_modellar.html",
           },
           {
             id: "7_2_2",
             name: "Саноат намунаси",
+            src: "/page/ochiq_malumotlar/sanoat_namunasi.html",
           },
           {
             id: "7_2_3",
             name: "Селекция ютуклари",
+            src: "/page/ochiq_malumotlar/seleksiya_yutuqlari.html",
           },
           {
             id: "7_2_4",
             name: "Товар белгилари ва хизмат кўрсатиш белгилари",
+            src: "/page/ochiq_malumotlar/tovar_belgilari.html",
           },
           {
             id: "7_2_5",
             name: "Географик кўрсаткичлар",
+            src: "/page/ochiq_malumotlar/geografik_kursatgich.html",
           },
           {
             id: "7_2_6",
             name: "Товар келиб чиққан жой номи",
+            src: "/page/ochiq_malumotlar/tovar_nomi.html",
           },
         ],
       },
@@ -292,20 +300,24 @@ export default [
           {
             id: "7_3_1",
             name: "Депонентланган адабиёт, фан ва санъат асарлари",
+            src: "/page/ochiq_malumotlar/deponental.html",
           },
           {
             id: "7_3_2",
             name: "ЭХМ дастурлар ва маълумотлар базалари",
+            src: "/page/ochiq_malumotlar/EXM_dasturlar.html",
           },
         ],
       },
       {
         id: "7_4",
         name: "Патент вакиллари рўйҳати",
+        src: "/page/ochiq_malumotlar/patent_vakillar.html",
       },
       {
         id: "7_5",
         name: "Коррупцияга қарши кураш",
+        src: "/page/ochiq_malumotlar/korrupsiyaga_kurash.html",
       },
     ],
   },
@@ -316,18 +328,22 @@ export default [
       {
         id: "8_1",
         name: "Марказ янгиликлари",
+        src: "/page/markaz_yangiliklari/markaz_yangiliklari.html",
       },
       {
         id: "8_2",
         name: "Пресс релизлар",
+        src: "/page/markaz_yangiliklari/pres_reziflar.html",
       },
       {
         id: "8_3",
         name: "Фотогаларея",
+        src: "/page/markaz_yangiliklari/fotolar.html",
       },
       {
         id: "8_4",
         name: "Видеогаларея",
+        src: "/page/markaz_yangiliklari/video_rasmlar.html",
       },
     ],
   },
@@ -338,22 +354,27 @@ export default [
       {
         id: "9_1",
         name: "Контактлар",
+        src: "/page/boshlangich/kontaktlar.html",
       },
       {
         id: "9_2",
         name: "Барча рақамлар",
+        src: "/page/boshlangich/barcha_raqamlar.html",
       },
       {
         id: "9_3",
         name: "Фукаролар мурожаати",
+        src: "/page/boshlangich/fuqarolar_murojati.html",
       },
       {
         id: "9_4",
         name: "Куп бериладиган саволлар",
+        src: "/page/boshlangich/kop_savollar.html",
       },
       {
         id: "9_5",
         name: "Банк реквизитлар",
+        src: "/page/boshlangich/bank_rekvizitlar.html",
       },
     ],
   },

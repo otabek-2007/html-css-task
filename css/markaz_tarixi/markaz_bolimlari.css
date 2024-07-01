@@ -71,6 +71,7 @@ body {
     text-align: left;
     margin-top: 10px;
 }
+
 .span-bar {
     margin-top: 15px;
     color: rgba(17, 22, 30, 1);
@@ -96,6 +97,7 @@ body {
     transform: translateX(10%);
     color: rgba(0, 60, 93, 1);
 }
+
 .card-content {
     width: 100%;
     margin-top: 20px;
@@ -185,7 +187,7 @@ body {
 .body-bar {
     margin-left: 20px;
     height: max-content;
-    width: 100%;
+    width: 350px;
     padding: 20px;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(234, 238, 245, 1);
@@ -237,7 +239,85 @@ body {
     border-radius: 12px;
 }
 
-.show-option {
+.span-bar {
+    margin-top: 15px;
+    color: rgba(17, 22, 30, 1);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 28px;
+    text-align: left;
+    transition: 0.4s all ease-in-out;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.child-span-bar {
+    margin-top: 15px;
+    color: rgba(17, 22, 30, 1);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 28px;
+    text-align: left;
+    transition: 0.4s all ease-in-out;
+}
+
+.show-options-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.active-line-span {
+    display: none;
+    height: 2px;
+    width: 15px;
+    transition: 0.5s all ease-in-out;
+    background-color: rgba(0, 60, 93, 1);
+}
+
+
+.active-bar {
+    transform: translateX(10%);
+    color: rgba(6, 73, 110, 1);
+}
+
+.active-child-bar {
+    transform: translateX(10%);
+    color: rgba(6, 73, 110, 1);
+}
+
+.span-bar:hover {
+    transform: translateX(10%);
+    color: rgba(0, 60, 93, 1);
+}
+
+.span-bar:hover .active-line-span {
+    display: flex;
+}
+
+.text-indent {
+    text-indent: 20px;
+}
+
+.show-options-container {
+    display: flex;
+    font-size: 20px;
+    gap: 12px;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.show-options-container p {
+    margin-top: 10px;
+}
+
+/* .show-option {
     margin-top: 15px;
     color: rgba(17, 22, 30, 1);
     font-size: 20px;
@@ -262,7 +342,7 @@ body {
 
 .show-options-container p {
     margin-top: 10px;
-}
+} */
 
 @media only screen and (max-width:1720px) {
     .card {
@@ -427,7 +507,8 @@ body {
     .card img {
         height: 250px;
     }
-    .card{
+
+    .card {
         padding: 10px;
     }
 
@@ -467,9 +548,11 @@ body {
         margin: 0px;
         font-size: 20px;
     }
-    .body-bar{
+
+    .body-bar {
         padding: 10px;
     }
+
     .title {
         font-size: 15px;
     }
